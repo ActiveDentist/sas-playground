@@ -1,10 +1,10 @@
 /**
  * Read datalines into a dataset
  * Fecha, Hora, Temperatura, Humedad, Presión atmosférica
- * Calculate: sensación térmica = (temperatura * humedad) / presión atmosférica
+ * Calcultate: sensación térmica = (temperatura * humedad) / presión atmosférica
  */
 data temparatures;
-  input Fecha $ 1-8 Hora $ 9-14 Temperatura Humedad PresionAtmosferica;
+  input Fecha Hora Temperatura Humedad PresionAtmosferica;
   SensacionTermica = (Temperatura * Humedad) / PresionAtmosferica;
 
 datalines;
