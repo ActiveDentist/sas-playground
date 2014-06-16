@@ -3,7 +3,7 @@
  * Fecha, Hora, Temperatura, Humedad, Presión atmosférica
  * Calcultate: sensación térmica = (temperatura * humedad) / presión atmosférica
  */
-data temparatures;
+data temperatures;
   input Fecha Hora Temperatura Humedad PresionAtmosferica;
   SensacionTermica = (Temperatura * Humedad) / PresionAtmosferica;
 
@@ -22,5 +22,5 @@ datalines;
  * Dump dataset
  */
 title "Temperaturas";
-proc print data = temparatures;
+proc print data = temperatures;
 run;
