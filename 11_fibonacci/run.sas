@@ -1,7 +1,7 @@
 /**
  * Define fibonacci function in the sasuser.FCMP_cat library
  */
-proc fcmp out = sasuser.FCMP_cat.fcns;
+proc fcmp outlib = sasuser.FCMP_cat.fcns;
   function fibonacci(x);
     if x le 1 then return(1);
     return(fibonacci(x - 1) + fibonacci(x - 2));
