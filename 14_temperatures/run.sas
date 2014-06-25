@@ -4,7 +4,7 @@
  * Calcultate: sensación térmica = (temperatura * humedad) / presión atmosférica
  */
 data temperatures;
-  input Fecha Hora Temperatura Humedad PresionAtmosferica;
+  input Fecha $ 1-8 Hora $ 9-14 Temperatura Humedad PresionAtmosferica;
   SensacionTermica = (Temperatura * Humedad) / PresionAtmosferica;
 
 datalines;
